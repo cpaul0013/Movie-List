@@ -30,7 +30,12 @@ namespace Movie_Lab
                 Hello(movies);
 
 
-                getContinue("Would you like to enter another category? Y / N");
+               bool cont = getContinue("Would you like to enter another category? Y / N");
+                if(cont == false)
+                {
+                    break;
+                }
+                
 
 
 
